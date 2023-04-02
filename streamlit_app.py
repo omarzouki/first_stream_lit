@@ -47,3 +47,7 @@ streamlit.header("fruit liste contains:")
 streamlit.dataframe( my_data_raw );                
 #streamlit.text("liste druit:")
 #streamlit.text(my_data_raw)
+
+fruit_choice1 = streamlit.text_input('Quel fruit veux tu ajouter')
+streamlit.write('The user entered ', fruit_choice1)
+
