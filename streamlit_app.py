@@ -52,4 +52,4 @@ fruit_choice1 = streamlit.text_input('Quel fruit veux tu ajouter')
 streamlit.write('The user entered ', fruit_choice1)
 streamlit.write('merci d\'avoir ajouter le fruit  ', fruit_choice1)
 
-my_cur.execute("insert into fruit_load_list values($fruit_choice1)")
+my_cur.execute("insert into fruit_load_list values('+fruit_choice1+");")
